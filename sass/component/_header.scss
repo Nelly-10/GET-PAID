@@ -1,0 +1,56 @@
+.header {
+    margin: 10rem 0;
+
+
+    &__big-icon {
+        width: 20rem;
+        height: 20rem;
+
+        
+    }
+
+    &__small-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__left {
+       display: flex;
+       justify-content: flex-end;
+
+       @include respond(tab-port) {
+        display: flex;
+        justify-content: center;
+    }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-start;
+
+        @include respond(tab-port) {
+            display: flex;
+            justify-content: center;
+        }
+     }
+
+     &__middle {
+        text-align: center;
+
+        &--h2 {
+            font-size: 3rem;
+        }
+
+        &--text {
+            font-size: 1.2rem;
+        }
+
+        @include respond(tab-port) {
+            margin: 5rem 0;
+        }
+     }
+}
+
+span {
+    color: #045381;
+}
